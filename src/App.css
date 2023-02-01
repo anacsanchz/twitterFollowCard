@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  /* padding: 2em; */
+  /* background-color: #16181c; */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.avatarContainer{
+  margin-right: 10px;
+}
+.avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: justify;
+}
+.card-button {
+  padding: 7px 10px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: white;
+  color: #0F1419;
+  font-weight: bold;
+  transition: .3s ease background-color;
+
+}
+.card-button:hover{
+  background-color: #238CD8;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.is-following{
+  width: 100px;
+}
+
+.is-following:hover{
+  border: none;
+  color: #fff;
+  background-color: #A41520;
+  width: 140px;
+}
+
+.stopFollowing{
+  display: none;
+}
+
+.is-following:hover .stopFollowing{
+  display: block;
+}
+
+.is-following:hover .following-text{
+  display: none;
+}
+
+.is-following:hover .card-button{
+  width: 140px;
+
+}
+
+
